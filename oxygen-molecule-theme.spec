@@ -7,6 +7,7 @@ URL:		http://www.kde-look.org/content/show.php?content=103741
 Group:		Graphical desktop/GNOME
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 License:	GPLv2+
+BuildRequires:	kde4-macros
 Requires:	gtk2
 Requires:	gtk-engines2
 Suggests:	systemsettings-qt-gtk
