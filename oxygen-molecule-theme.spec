@@ -1,6 +1,6 @@
 Name:		oxygen-molecule-theme
 Summary:	Oxygen Molecule theme for GTK
-Version:	2.2
+Version:	3.1
 Release:	%mkrel 1
 Source0:	http://www.kde-look.org/CONTENT/content-files/103741-Oxygen-Molecule_%{version}_theme.tar.gz
 URL:		http://www.kde-look.org/content/show.php?content=103741
@@ -18,22 +18,26 @@ used under the KDE 4 desktop environment.
 
 %prep 
 %setup -q -c -n %{name}-%{version}
-%__tar -xzf kde43-oxygen-molecule.tar.gz
-%__chmod 644 kde43-oxygen-molecule/gtk-2.0/*/* OxygenMolecule.colors
-%__rm -f kde43-oxygen-molecule/gtk-2.0/*/.directory Oxygen-Molecule\ %{version}\ setup\ guide.odt
+%__tar -xzf kde44-oxygen-molecule.tar.gz
+%__chmod 644 kde44-oxygen-molecule/gtk-2.0/*/* kde44-oxygen-molecule-flat/gtk-2.0/*/* Oxygen-Molecule_3.0.colors
+%__rm -f Oxygen-Molecule\ %{version}\ setup\ guide.odt
 
 %build
 
 %install
 %__rm -rf %{buildroot}
-%__install -d %{buildroot}%{_datadir}/themes
-%__mv kde43-oxygen-molecule %{buildroot}%{_datadir}/themes/Oxygen-Molecule
+%__install -d %{buildroot}%{_datadir}/themes %{buildroot}%{_kde_appsdir}/color-schemes
+%__mv kde44-oxygen-molecule %{buildroot}%{_datadir}/themes/Oxygen-Molecule
+%__mv kde44-oxygen-molecule-flat %{buildroot}%{_datadir}/themes/Oxygen-Molecule-Flat
+%__mv Oxygen-Molecule_3.0.colors %{buildroot}%{_kde_appsdir}/color-schemes/OxygenMolecule.colors
 
 %clean
 %__rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root,0755)
-%doc Oxygen-Molecule\ %{version}\ setup\ guide.pdf  OxygenMolecule.colors  Oxygen-Molecule-screenshot2.png
+%doc Oxygen-Molecule\ %{version}\ setup\ guide.pdf Oxygen-Molecule-screenshot1.png
 %{_datadir}/themes/Oxygen-Molecule
+%{_datadir}/themes/Oxygen-Molecule-Flat
+%{_kde_appsdir}/color-schemes/OxygenMolecule.colors
 
