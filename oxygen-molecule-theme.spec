@@ -1,7 +1,7 @@
 Name:		oxygen-molecule-theme
 Summary:	Oxygen Molecule theme for GTK
 Version:	3.2
-Release:	%mkrel 1
+Release:	%mkrel 2
 Source0:	http://www.kde-look.org/CONTENT/content-files/103741-Oxygen-Molecule_%{version}_theme.tar.gz
 URL:		http://www.kde-look.org/content/show.php?content=103741
 Group:		Graphical desktop/GNOME
