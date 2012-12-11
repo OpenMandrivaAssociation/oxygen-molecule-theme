@@ -42,3 +42,26 @@ used under the KDE 4 desktop environment.
 %{_datadir}/themes/Oxygen-Molecule-Flat
 %{_kde_appsdir}/color-schemes/OxygenMolecule.colors
 
+
+
+%changelog
+* Tue Dec 07 2010 Oden Eriksson <oeriksson@mandriva.com> 3.2-2mdv2011.0
++ Revision: 613546
+- rebuild
+
+* Thu Apr 08 2010 Luc Menut <lmenut@mandriva.org> 3.2-1mdv2010.1
++ Revision: 533257
+- update to 3.2
+
+* Sun Mar 21 2010 Luc Menut <lmenut@mandriva.org> 3.1-1mdv2010.1
++ Revision: 525946
+- add kde4-macros as buildrequires
+- update to 3.1
+- updated theme to match KDE 4.4 widgets and shading
+- update file list
+
+* Wed Jan 13 2010 Luc Menut <lmenut@mandriva.org> 2.2-1mdv2010.1
++ Revision: 491063
+- import oxygen-molecule-theme
+
+
