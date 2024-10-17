@@ -3,7 +3,7 @@ Summary:	Oxygen Molecule theme for GTK
 Version:	3.2
 Release:	3
 Source0:	http://www.kde-look.org/CONTENT/content-files/103741-Oxygen-Molecule_%{version}_theme.tar.gz
-URL:		http://www.kde-look.org/content/show.php?content=103741
+URL:		https://www.kde-look.org/content/show.php?content=103741
 Group:		Graphical desktop/GNOME
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 License:	GPLv2+
